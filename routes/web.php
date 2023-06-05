@@ -36,10 +36,6 @@ route::controller(SystemController::class)->group(function(){
 
     Route::post('validate_product','validate_product')->name('show.validate_product');
 
-    route::get('validate_edit','validate_edit')->name('show.edit');
-
-    route::post('validate_update','validate_update')->name('show.update_product');
-
     Route::get('dashboard', 'dashboard')->name('dashboard');
 
 });

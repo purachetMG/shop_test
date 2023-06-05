@@ -16,11 +16,11 @@
   
         <form action="{{ route('show.validate_login') }}" method="post">
             @csrf  
-            <input type="text" name="email" class="fadeIn second" placeholder="Email" />
+            <input type="text" name="email" class="fadeIn second" placeholder="Email" /><br>
             @if($errors->has('email'))
                 <span class="text-danger">{{ $errors->first('email') }}</span>
             @endif
-            <input type="password" name="password" class="fadeIn third" placeholder="Password" />
+            <input type="password" name="password" class="fadeIn third" placeholder="Password" /><br>
             @if($errors->has('password'))
                 <span class="text-danger">{{ $errors->first('password') }}</span>
             @endif
